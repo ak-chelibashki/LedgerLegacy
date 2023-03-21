@@ -28,7 +28,7 @@ import javax.swing.JOptionPane;
  * @author 564951
  * ak-chelibashki
  */
-public class MainFrame implements ActionListener{
+public class MainFrame extends JPanel implements ActionListener{
 
 
     /**
@@ -129,6 +129,18 @@ public class MainFrame implements ActionListener{
 		mainFrame.setLocationRelativeTo(null);
 		mainFrame.setVisible(true);
     }//end createPanel
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new MainFrame(new JFrame("Trade Ledger")).setVisible(true);
+            }
+        });
+    }//end main
 
     /**
      * Button action events
