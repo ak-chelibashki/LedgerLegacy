@@ -28,7 +28,7 @@ import javax.swing.JOptionPane;
  * @author 564951
  * ak-chelibashki
  */
-public class MainFrame implements ActionListener{
+public class MainFrame extends JPanel implements ActionListener{
 
 
     /**
